@@ -8,6 +8,9 @@ name = "pypi"
 [packages]
 requests = "*"
 "bs4" = "*"
+aiohttp = "*"
+lxml = "*"
+cssselect = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
