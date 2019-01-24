@@ -5,7 +5,7 @@ Get random comics from multiple sources (XKCD, Commitstrip, ...)
 ```sh
 pipenv install
 pipenv shell
-python script.py  # uses threading (OS)
+python script.py    # uses threading (OS)
 python async_dl.py  # uses asyncio
 ```
 
