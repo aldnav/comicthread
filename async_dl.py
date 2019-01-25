@@ -14,6 +14,7 @@ from lxml.cssselect import CSSSelector
 
 
 async def download_page(context, queue):
+    """Downloads a page and saves the body into queue"""
     url, selector = context
     await asyncio.sleep(0)
     async with aiohttp.ClientSession() as session:
@@ -24,6 +25,7 @@ async def download_page(context, queue):
 
 
 async def get_image(queue):
+    """When there is an item in queue, parse to get comics url"""
     while True:
         payload = await queue.get()
         await asyncio.sleep(0)
